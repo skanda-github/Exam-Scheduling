@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Scheduling</title>
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body style="background-color: #eeeeee;">
+
+                <!-- Sidebar/menu -->
+                <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-medium" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+                    <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-small">CLOSE</a> 
+                    <a href="http://localhost:3000/admin_side"  class="w3-bar-item w3-button w3-center w3-padding-small">Admin Page</a>
+                    <a href="http://localhost:3000/complete_list"  class="w3-bar-item w3-button w3-center w3-padding-small">Complete List</a>   
+                </nav>
+              
+                  <!-- Top menu on small screens -->
+                <header class="w3-container w3-top w3-white w3-large w3-padding-16">
+                          <span class="w3-left w3-padding">TIME TABLE</span>
+                          <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+                </header>
+              
+        
+    <br><br><br><br><br>
+
+    <div class="table-data">
+        <center>
+            <table style="width: 50%;" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Department</th>
+                        <th>Course_ID</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+
+                 <%
+                if(data.length!=0){
+                data.forEach(function(result){
+                %>
+                <tr>
+                    <td><%=result.year %></td>
+                    <td><%=result.dept_id %></td>
+                    <td><%=result.course_id %></td>
+                    <td><%=result.exam_date %></td>
+                    <td><%=result.exam_time %></td>
+                </tr>
+                <%  }) %>
+                <% } %>
+            </table>
+        </center>
+
+    </div>
+</body>
+</html>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>

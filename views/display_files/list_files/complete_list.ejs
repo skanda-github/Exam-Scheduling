@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      a{
+         text-decoration: none;
+      }
+    </style>
+    <title>Exam Scheduling</title>
+</head>
+<body style="background-color: #eeeeee;">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-medium" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-small">CLOSE</a> 
+        <!-- <a href="http://localhost:3000/home"  class="w3-bar-item w3-button w3-center w3-padding-small">Home</a> -->
+        <a href="http://localhost:3000/admin_side"  class="w3-bar-item w3-button w3-center w3-padding-small">Admin Page</a>
+        <!-- <a href="http://localhost:3000/complete_list"  class="w3-bar-item w3-button w3-center w3-padding-small">Complete List</a>    -->
+    </nav>
+  
+      <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-white w3-large w3-padding-16">
+              <span class="w3-left w3-padding">COMPLETE LIST</span>
+              <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+  
+
+<br><br><br><br><br>
+         
+         <div class="list">
+                <p>1.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display4">Students List</a></p>
+                <p>2.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display5">Courses List</a></p>
+                <p>3.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display6">Department List</a></p>
+                <p>4.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display7">Teacher List</a></p>
+                <p>5.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display8">Room List</a></p>
+                <p>6.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display">Room Allotment Complete List</a></p>
+                <p>7.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display9">Time Table Complete List</a></p>
+                <p>8.&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost:3000/display10">Teacher Allotment Complete List</a></p>
+         </div>
+</body>
+</html>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+document.getElementById("mySidebar").style.display = "block";
+document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+document.getElementById("mySidebar").style.display = "none";
+document.getElementById("myOverlay").style.display = "none";
+}
+</script>
