@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="index.css">
+    <title>Exam Scheduling</title>
+</head>
+<body style="background-color: #eeeeee;">
+       
+     <!-- Sidebar/menu -->
+     <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-medium" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-small">CLOSE</a> 
+        <a href="http://localhost:3000/home"  class="w3-bar-item w3-button w3-center w3-padding-small">Log out</a> 
+        <a href="http://localhost:3000/room_data_entry"  class="w3-bar-item w3-button w3-center w3-padding-small">Room Data</a> 
+        <a href="http://localhost:3000/student_allotment"  class="w3-bar-item w3-button w3-center w3-padding-small">Room Allotment</a>
+        <a href="http://localhost:3000/time_table_entry"  class="w3-bar-item w3-button w3-center w3-padding-small">Time Table Entry</a> 
+        <a href="http://localhost:3000/teacher_allotment"  class="w3-bar-item w3-button w3-center w3-padding-small">Teacher Allotment</a> 
+        <a href="http://localhost:3000/complete_list"  class="w3-bar-item w3-button w3-center w3-padding-small">Complete List</a>
+        <a href="http://localhost:3000/delete_process"  class="w3-bar-item w3-button w3-center w3-padding-small">Delete Scheduling</a>    
+
+     </nav>
+  
+      <!-- Top menu on small screens -->
+      <header class="w3-container w3-top w3-white w3-large w3-padding-16">
+              <span class="w3-left w3-padding">HOME</span>
+              <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+      </header>
+      <div class="top-container">
+        <h1>ADMIN SIDE</h1>
+        <h2>Schedule time table,seating arrangements of students and teacher invigilation during exams</h2>
+      </div>
+
+
+      <div class="middle-container"> 
+        <div class="skill-row">
+          <img class="Iskills1" src="https://expresswriters.com/wp-content/uploads/2019/07/header-11-500x500.jpg" alt="P1">
+          <h3>Description</h3>
+          <p class="Pskills1">Scheduling can by done admin only</p>
+        </div>
+      </div>
+
+</body>
+</html>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    </script>
