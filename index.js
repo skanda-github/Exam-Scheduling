@@ -25,7 +25,7 @@ var connection = mysql.createConnection({
     password : 'Login_to_mysql'
 });
 
-app.get('/home',function(req,res){
+app.get('/',function(req,res){
     console.log("Someone requested the server!");
     res.render("index");
 });
